@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block content %}
+<h1 style="width: 100%">{% block title %} {% endblock %}</h1>
+<div class="container create-container mt-5">
+  <h2>Log Your Favorites!</h2>
+
+  <form method="post">
+    <div class="col-md-12">
+      <label for="name" class="form-label mt-3">Name</label>
+      <input type="text" class="form-control" name="name" required />
+    </div>
+    <div class="col-md-12">
+      <label for="food" class="form-label mt-3">Food</label>
+      <select class="form-select" name="food" required>
+        <option selected>--Choose favorite--</option>
+        <option value="🌮">taco</option>
+        <option value="🍕">pizza</option>
+        <option value="🍔">burger</option>
+      </select>
+    </div>
+    <div class="col-md-12">
+      <label for="color" class="form-label mt-3">Color</label>
+      <input type="text" class="form-control" name="color" required />
+    </div>
+    <br />
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 style="width: 100%">{% block title %} {% endblock %}</h1>
+<div class="container edit-container">
+  
+  <h2>Edit: {{ fruit.name }}</h2>
+
+  <form method="post">
+    <div class="col-md-12">
+      <label for="name" class="form-label mt-3">Name</label>
+      <input type="text" class="form-control" name="name"
+              value="{{ fruit.name }}" 
+                  placeholder="Name">
+                  </input>
+    </div>
+    <div class="col-md-12">
+      <label for="food" class="form-label mt-3">Food</label>
+      
+      <select class="form-select" name="food">
+        <option value="{{ fruit.food }}">{{ fruit.food }}(current choice)</option>
+        <option value="🌮">🌮</option>
+        <option value="🍕">🍕</option>
+        <option value="🍔">🍔</option>
+      </select>
+    </div>
+    <div class="col-md-12">
+      <label for="color" class="form-label ">Color</label>
+      <input type="text" class="form-control" name="color"
+                  value="{{ fruit.color }}"
+                  placeholder="Color">
+                  </input>
+    </div>
+    <div class="button-row">
+      <div class="button-col">
+      <div>
+        <button type="submit" id="edit-button" class="btn btn-outline-primary ">Submit</button>
+      </div>
+      <div>
+        <form
+            method="POST"
+            action="{{ url_for('delete', fruit_id=fruit.id) }}"
+          >
+          <input class="btn btn-outline-danger " type="submit" id="edit-button" value="Delete" onclick="return confirm('🚨 HOLD UP! Are you sure you want to delete this??')"
+          />
+    </div>
+    <div>
+      <a href="/"><button id="edit-button" class="btn btn-outline-primary">Cancel</button> </a>
+    </div>
+  </div>
+    </div>
+    
+  </form>
+  
+</div>
+{% endblock %}

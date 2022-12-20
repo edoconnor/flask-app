@@ -1,0 +1,76 @@
+body {
+  font-family: "Chivo Mono", monospace;
+}
+.navbar {
+  background-color: #dfe6e9;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+td,
+th {
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+a {
+  color: #2d3436;
+}
+.table {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.table-container,
+.create-container {
+  max-width: 600px;
+  height: 100vh;
+}
+.table-box {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.edit-container {
+  max-width: 600px;
+  height: 50vh;
+  margin-top: 2rem;
+  background-color: #bdc3c7;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.table {
+  text-align: center;
+}
+td {
+  height: 50px;
+  vertical-align: middle;
+}
+.emoji {
+  font-size: x-large;
+}
+#food-select {
+  box-sizing: 100%;
+}
+
+.form-control {
+  color: red;
+}
+
+.button-row {
+  display: flex;
+}
+.button-col {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+#edit-button {
+  margin-top: 2rem;
+  margin-right: 1rem;
+}

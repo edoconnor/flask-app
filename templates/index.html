@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container table-container">
+  <div class="table-box">
+    <img src="/static/coffee.jpg" class="img-fluid rounded mx-auto d-block" />
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Food</th>
+            <th scope="col">Color</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for fruit in fruits %}
+          <tr>
+            <td>{{ fruit.id }}</td>
+            <td>{{ fruit.name }}</td>
+            <td class="emoji">{{ fruit.food }}</td>
+            <td>{{ fruit.color }}</td>
+            <td>
+              <a
+                href="{{ url_for('edit', fruit_id=fruit.id)}}"
+                class="btn btn-outline-danger"
+                role="button"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <tr>
+        <td>
+          <a href="/create" class="btn btn-outline-primary" role="button"
+            >Add New favorite</a
+          >
+        </td>
+      </tr>
+    </div>
+  </div>
+</div>
+{% endblock %}
