@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Mono", monospace;
+}
+.main-container {
+  text-align: center;
+  max-width: 600px;
+  height: 100vh;
+  background-color: #b2bec3;
+}
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+#myChart {
+  margin-left: auto;
+  margin-right: auto;
+}
