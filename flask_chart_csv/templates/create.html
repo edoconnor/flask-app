@@ -1,0 +1,18 @@
+{% block content %}
+<div class="form-container mx-auto">
+  <h1>{% block title %} Add New Data {% endblock %}</h1>
+  <form action="/create" method="post">
+    <div class="mb-3">
+      <label for="month" class="form-label">Month</label>
+      <input type="text" class="form-control" name="month" />
+    </div>
+
+    <div class="mb-3">
+      <label for="sales" class="form-label">Sales</label>
+      <input type="text" class="form-control" name="sales" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+{% endblock %}
