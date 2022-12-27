@@ -1,7 +1,6 @@
 import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 
-# ...
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '28d57394fb434269bc884ebd45f39f3cbcd0eb9628563a8476325b47ca4ae40c'
