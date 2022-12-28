@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+h4,
+h5 {
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+.container-background {
+  text-align: center;
+  max-width: 600px;
+  height: 100vh;
+  border-radius: 15px;
+}
+a {
+  color: #2d3436;
+}
+.nav-title {
+  font-weight: 300;
+  font-size: 36px;
+}
+.temp-text {
+  font-size: 4rem;
+  padding-top: 2rem;
+}
+.form-container {
+  max-width: 300px;
+  padding-top: 3rem;
+}
+.show-result {
+  height: content;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dfe6e9;
+  border-radius: 15px;
+  padding-bottom: 2rem;
+}

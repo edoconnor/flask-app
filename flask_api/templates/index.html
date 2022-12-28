@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-background mx-auto">
+  {% if city_name %}
+  <div class="show-result mx-auto">
+    <h1 class="temp-text">{{temperature}}°F</h1>
+    <h1>{{city_name}}</h1>
+    <h4>{{wind}} mph wind</h4>
+    <h4>{{condition}}</h4>
+  </div>
+  {% endif %} {% include 'form.html' %} {% from 'form.html' import input with
+  context %} {% endblock %}
+</div>
