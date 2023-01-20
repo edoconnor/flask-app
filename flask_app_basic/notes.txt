@@ -1,0 +1,26 @@
+https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application#prerequisites
+
+----------------------------
+TO CREATE DATABASE:
+
+export FLASK_APP=app
+flask shell
+
+from app import db, Student
+db.create_all()
+----------------------------
+
+TO POPULATE DATABASE:
+
+flask shell
+from app import db, Student
+student_john = Student(firstname='john', lastname='doe',
+                       email='jd@example.com', age=23,
+                       bio='Biology student')
+----------------------------
+TO TEST:
+
+student_john.firstname
+student_john.bio
+
+----------------------------
